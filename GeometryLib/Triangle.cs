@@ -15,7 +15,6 @@ namespace GeometryLib
 
         public double CalculateArea()
         {
-            // Using Heron's formula to calculate area of triangle
             double s = (side1 + side2 + side3) / 2;
             return Math.Sqrt(s * (s - side1) * (s - side2) * (s - side3));
         }

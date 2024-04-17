@@ -90,10 +90,8 @@ namespace GeometryTests
        [Fact]
         public void SetSide_NullValue_ThrowsArgumentNullException()
         {
-            // Arrange
             var square = new Square(4);
 
-            // Act & Assert
             Assert.Throws<ArgumentNullException>(() => square.Side = null);
         }
     }
