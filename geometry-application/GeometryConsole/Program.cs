@@ -32,7 +32,7 @@ namespace GeometryConsole
 
             var featureManager = serviceProvider.GetRequiredService<IFeatureManagerSnapshot>();
 
-            // Provide access to shapes based on feature flags
+            // Access to shapes 
             if (await featureManager.IsEnabledAsync("Square"))
             {
                 var square = serviceProvider.GetRequiredService<Square>();
@@ -51,7 +51,7 @@ namespace GeometryConsole
                 Console.WriteLine($"Triangle Area: {triangle.CalculateArea()}, Perimeter: {triangle.CalculatePerimeter()}");
             }
 
-            // Continue with accepting user input and controlling shape access
+            
         }
     }
 }
